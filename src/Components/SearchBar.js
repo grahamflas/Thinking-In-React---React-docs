@@ -9,11 +9,13 @@ class SearchBar extends React.Component{
           type="text" 
           placeholder="Search..."
           value={filterText}
+          onChange={this.props.searchHandler}
         />
         <p>
           <input 
             type="checkbox"
             checked={inStockOnly}
+            onChange={this.props.checkHandler}
           />
           Only show products that are in-stock
         </p>
