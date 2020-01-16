@@ -6,7 +6,7 @@ import PRODUCTS from '../products';
 function App() {
   return (
     <div className="App">
-      <FilterableProductTable products={ PRODUCTS }/>
+      <FilterableProductTable products={PRODUCTS}/>
     </div>
   );
 }
