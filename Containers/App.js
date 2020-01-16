@@ -1,12 +1,11 @@
 import React from 'react';
 import '../App.css';
 import FilterableProductTable from './FilterableProductTable';
-import PRODUCTS from '../products';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <FilterableProductTable products={PRODUCTS}/>
+      <FilterableProductTable products={props.products}/>
     </div>
   );
 }
