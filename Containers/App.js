@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import FilterableProductTable from './Containers/FilterableProductTable';
-import PRODUCTS from './products';
+import '../App.css';
+import FilterableProductTable from './FilterableProductTable';
+import PRODUCTS from '../products';
 
 function App() {
   return (
