@@ -8,7 +8,12 @@ class ProductTable extends React.Component{
 
     this.props.products.forEach(product => {
       if (product.category !== lastCategory){
-        rows.push( <ProductCategoryRow /> );
+        rows.push( 
+          <ProductCategoryRow 
+            category={product.category} 
+            key={product.category}
+          /> 
+        );
       } 
     });
 

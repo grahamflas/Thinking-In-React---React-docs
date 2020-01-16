@@ -4,7 +4,7 @@ class ProductCategoryRow extends React.Component{
   render(){
     return  (
       <div>
-        ProductCategoryRow
+        {this.props.category}
       </div>
     )
   }
