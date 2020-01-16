@@ -1,7 +1,17 @@
 import React from 'react';
+import ProductCategoryRow from '../Components/ProductCategoryRow';
 
 class ProductTable extends React.Component{
   render(){
+    const rows = [];
+    let lastCategory = null;
+
+    this.props.products.forEach(product => {
+      if (product.category !== lastCategory){
+        rows.push( <ProductCategoryRow /> );
+      } 
+    });
+
     return(
       <table>
         <thead>
@@ -10,7 +20,7 @@ class ProductTable extends React.Component{
             <th>Price</th>
           </tr>
         </thead>
-        <tbody>row</tbody>
+        <tbody>{rows}</tbody>
       </table>
     )
   }
