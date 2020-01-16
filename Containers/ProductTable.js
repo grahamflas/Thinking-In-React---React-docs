@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCategoryRow from '../Components/ProductCategoryRow';
+import ProductRow from '../Components/ProductRow';
 
 class ProductTable extends React.Component{
   render(){
@@ -15,6 +16,14 @@ class ProductTable extends React.Component{
           /> 
         );
       } 
+
+      rows.push(
+        <ProductRow 
+          product={product}
+          key={product.name}
+        />
+      )
+      lastCategory = product.category
     });
 
     return(
